@@ -1,0 +1,13 @@
+@startuml
+	interface OneInterface << interface >> {
+	}
+	interface TwoInterface << interface >> {
+	}
+	class OneClass << class >> {
+	}
+	class TwoClass << class >> {
+	}
+TwoInterface --|> OneInterface
+OneClass ..|> OneInterface
+TwoClass ..|> TwoInterface
+@enduml
