@@ -8,8 +8,8 @@
                     <div class="flash_msg">
                         <flash_messages :message_class="'danger'" :time ='5' :message="'{{{ Session::get('error') }}}'" v-cloak></flash_messages>
                     </div>
-                    @php 
-                        session()->forget('error'); 
+                    @php
+                        session()->forget('error');
                         $verified_user = \App\User::select('user_verified')->where('id', $job->employer->id)->pluck('user_verified')->first();
                     @endphp
                 @endif
@@ -40,7 +40,7 @@
                                                 @endif
                                             </div>
                                         @endif
-                                        @if (!empty($job->price) || 
+                                        @if (!empty($job->price) ||
                                             !empty($job->location->title))
                                             <ul class="wt-userlisting-breadcrumb">
                                                 @if (!empty($job->price))
@@ -64,15 +64,15 @@
                                             </ul>
                                         </div>
                                     </div>
-                                </div>	
+                                </div>
                             </div>
-                            <div class="wt-btnarea"><a class="wt-btn" href="{{{url('paypal/ec-checkout')}}}"><span>{{ trans('lang.paypal') }}</span></a></div>
+                            <div class="wt-btnarea"><a class="wt-btn" href="{{{url('bkash/ec-checkout')}}}"><span>{{ trans('Bkash') }}</span></a></div>
                         </div>
                         @php
-                            session()->put(['product_id' => e($proposal->id)]);  
-                            session()->put(['product_title' => e($job->title)]); 
-                            session()->put(['product_price' => e($job->price)]); 
-                            session()->put(['type' => 'project']); 
+                            session()->put(['product_id' => e($proposal->id)]);
+                            session()->put(['product_title' => e($job->title)]);
+                            session()->put(['product_price' => e($job->price)]);
+                            session()->put(['type' => 'project']);
                         @endphp
                     </div>
                 </div>

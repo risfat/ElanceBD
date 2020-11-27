@@ -13,17 +13,17 @@
                             </div>
                             <div class="wt-packagecontent">
                                 <ul class="wt-packageinfo">
-                                    @foreach($package_options as $options) 
+                                    @foreach($package_options as $options)
                                         <li @if ($options == 'Price') class="wt-packageprices" @endif><span>{{{$options}}}</span></li>
                                     @endforeach
                                 </ul>
                             </div>
                         </div>
-                        @php  
+                        @php
                             $options = unserialize($package->options);
                             $banner = $options['banner_option'] = 1 ? 'ti-check' : 'ti-na';
                             $chat = $options['private_chat'] = 1 ? 'ti-check' : 'ti-na';
-                        @endphp 
+                        @endphp
                         <div class="wt-package wt-baiscpackage">
                             <div class="wt-packagehead">
                                 <h3>{{{$package->title}}}</h3>
@@ -33,25 +33,25 @@
                                 <ul class="wt-packageinfo">
                                     <li class="wt-packageprice"><span><sup>$</sup>{{{$package->cost}}}<sub>\ {{{$options['duration']}}}</sub></span></li>
                                     @foreach ($options as $key => $option)
-                                        @php  
+                                        @php
                                             if ($key == 'banner_option' || $key == 'private_chat') {
-                                                $class = $option == true ? 'ti-check' : 'ti-na'; 
+                                                $class = $option == true ? 'ti-check' : 'ti-na';
                                             }
-                                        @endphp 
+                                        @endphp
                                         @if ($key == 'banner_option' || $key == 'private_chat')
                                             <li><span><i class="{{{$class}}}"></i></span></li>
-                                        @else 
+                                        @else
                                             <li><span> {{ $option }}</span></li>
                                         @endif
                                     @endforeach
                                 </ul>
                                 @php
-                                    session()->put(['product_id' => e($package->id)]);  
-                                    session()->put(['product_title' => e($package->title)]); 
-                                    session()->put(['product_price' => e($package->cost)]); 
-                                    session()->put(['type' => 'package']); 
+                                    session()->put(['product_id' => e($package->id)]);
+                                    session()->put(['product_title' => e($package->title)]);
+                                    session()->put(['product_price' => e($package->cost)]);
+                                    session()->put(['type' => 'package']);
                                 @endphp
-                                <a class="wt-btn" href="{{{url('paypal/ec-checkout')}}}"><span>{{ trans('lang.paypal') }}</span></a>
+                                <a class="wt-btn" href="{{{url('bkash/ec-checkout')}}}"><span>{{ trans('Bkash') }}</span></a>
                             </div>
                         </div>
                     </div>
