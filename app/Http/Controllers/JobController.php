@@ -236,7 +236,7 @@ class JobController extends Controller
         $current_date = Carbon::now()->format('M d, Y');
         $posted_jobs = $this->job::where('user_id', Auth::user()->id)->count();
         $posted_featured_jobs = Job::where('user_id', Auth::user()->id)->where('is_featured', 'true')->count();
-        if (!empty($package) && $current_date <= $expiry_date) {
+        if (!empty($package) ) {
             if ($request['is_featured'] == 'true') {
                 if ($posted_featured_jobs >= intval($option['featured_jobs'])) {
                     $json['type'] = 'error';

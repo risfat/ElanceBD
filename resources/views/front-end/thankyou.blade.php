@@ -13,7 +13,7 @@
             <div class="row">
                 <div class="col-12 col-sm-12 col-md-12 col-lg-12 float-left">
                     {{ trans('lang.thanks_subscription') }}
-                    <a class="wt-btn" href="{{{url('paypal/ec-checkout')}}}"><span>{{ trans('lang.click_here') }} </span></a>
+                    <a class="wt-btn" href="{{{url('bkash/ec-checkout')}}}"><span>{{ trans('lang.click_here') }} </span></a>
                 </div>
             </div>
         </div>

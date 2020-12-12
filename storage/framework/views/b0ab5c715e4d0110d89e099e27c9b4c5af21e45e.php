@@ -44,6 +44,8 @@
                                     </div>
 
                                 </div>
+                                
+                                <!--
                                 <div class="tg-authorcodescan">
                                     <figure class="tg-qrcodeimg">
                                         <?php echo QrCode::size(100)->generate(Request::url('profile/'.$user->slug));; ?>
@@ -61,6 +63,11 @@
                                         </div>
                                     </div>
                                 </div>
+                                
+                                
+                                -->
+                                
+                                
                                 <?php if(in_array($user->id, $save_employer)): ?>
                                 <div class="wt-clicksavearea">
                                     <a href="javascript:void(0);" class="wt-clicksavebtn wt-btndisbaled" >
@@ -243,5 +250,4 @@
         </div>
     </div>
 <?php $__env->stopSection(); ?>
-
 <?php echo $__env->make('front-end.master', ['body_class' => 'wt-innerbgcolor'], \Illuminate\Support\Arr::except(get_defined_vars(), array('__data', '__path')))->render(); ?>

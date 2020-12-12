@@ -51,7 +51,7 @@
                                     session()->put(['product_price' => e($package->cost)]); 
                                     session()->put(['type' => 'package']); 
                                 @endphp
-                                <a class="wt-btn" href="{{{url('paypal/ec-checkout')}}}"><span>{{ trans('lang.paypal') }}</span></a>
+                                <a class="wt-btn" href="{{{url('bkash/ec-checkout')}}}"><span>{{ trans('Bkash') }}</span></a>
                             </div>
                         </div>
                     </div>

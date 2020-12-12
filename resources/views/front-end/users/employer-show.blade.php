@@ -45,6 +45,8 @@
                                     </div>
 
                                 </div>
+                                
+                                <!--
                                 <div class="tg-authorcodescan">
                                     <figure class="tg-qrcodeimg">
                                         {!! QrCode::size(100)->generate(Request::url('profile/'.$user->slug)); !!}
@@ -59,6 +61,11 @@
                                         </div>
                                     </div>
                                 </div>
+                                
+                                
+                                -->
+                                
+                                
                                 @if (in_array($user->id, $save_employer))
                                 <div class="wt-clicksavearea">
                                     <a href="javascript:void(0);" class="wt-clicksavebtn wt-btndisbaled" >

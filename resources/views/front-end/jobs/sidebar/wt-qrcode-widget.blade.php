@@ -1,4 +1,4 @@
-<div class="tg-authorcodescan">
+<!-- <div class="tg-authorcodescan">
     <figure class="tg-qrcodeimg">
         {!! QrCode::size(100)->generate(Request::url('job/'.$job->slug)); !!}
     </figure>
@@ -9,3 +9,4 @@
         </div>
     </div>
 </div>
+-->

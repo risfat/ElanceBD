@@ -1,4 +1,17 @@
-{!! Form::open(['url' => '', 'class' =>'wt-formtheme wt-userform', 'id' =>'payment-form', '@submit.prevent'=>'submitPaypalSettings'])!!}
+<?php echo "This Section Is for Payment Settings";
+
+
+
+
+
+?>
+
+
+
+
+
+
+<!-- {!! Form::open(['url' => '', 'class' =>'wt-formtheme wt-userform', 'id' =>'payment-form', '@submit.prevent'=>'submitPaypalSettings'])!!}
     <div class="wt-location wt-tabsinfo">
         <div class="wt-tabscontenttitle">
             <h2>{{{ trans('lang.paypal_settings') }}}</h2>
@@ -38,4 +51,4 @@
     <div class="wt-updatall la-updateall-holder">
         {!! Form::submit(trans('lang.btn_save'), ['class' => 'wt-btn']) !!}
     </div>
-{!! Form::close() !!}
+{!! Form::close() !!} -->

@@ -126,7 +126,7 @@
                 </div>
             </div>
         </div>
-        <div class="wt-widget wt-effectiveholder">
+        <!--<div class="wt-widget wt-effectiveholder">
             <div class="wt-widgettitle">
                 <h2>{{ trans('lang.langs') }}</h2>
             </div>
@@ -151,7 +151,7 @@
                     @endif
                 </fieldset>
             </div>
-        </div>
+        </div> -->
         <div class="wt-widget wt-effectiveholder">
             <div class="wt-widgetcontent">
                 <div class="wt-applyfilters">

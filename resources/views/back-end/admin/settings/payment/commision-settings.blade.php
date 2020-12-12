@@ -1,4 +1,25 @@
-{!! Form::open(['url' => '', 'class' =>'wt-formtheme wt-userform', 'id' =>'comission-form', '@submit.prevent'=>'submitCommisionSettings'])!!}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- {!! Form::open(['url' => '', 'class' =>'wt-formtheme wt-userform', 'id' =>'comission-form', '@submit.prevent'=>'submitCommisionSettings'])!!}
     <div class="wt-location wt-tabsinfo">
         <div class="wt-tabscontenttitle">
             <h2>{{{ trans('lang.payout_settings') }}}</h2>
@@ -49,4 +70,4 @@
     <div class="wt-updatall la-updateall-holder">
         {!! Form::submit(trans('lang.btn_save'), ['class' => 'wt-btn']) !!}
     </div>
-{!! Form::close() !!}
+{!! Form::close() !!} -->

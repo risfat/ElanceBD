@@ -259,6 +259,8 @@
                                 </div>
                             @endif
                             <div class="wt-proposalsr">
+                               
+                               <!--
                                 <div class="tg-authorcodescan tg-authorcodescanvtwo">
                                     <figure class="tg-qrcodeimg">
                                         {!! QrCode::size(100)->generate(Request::url('profile/'.$user->slug)); !!}
@@ -270,6 +272,8 @@
                                         </div>
                                     </div>
                                 </div>
+                                
+                                -->
                             </div>
                             <div class="wt-widget wt-sharejob">
                                 <div class="wt-widgettitle">

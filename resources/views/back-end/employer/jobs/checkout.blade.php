@@ -66,7 +66,7 @@
                                     </div>
                                 </div>	
                             </div>
-                            <div class="wt-btnarea"><a class="wt-btn" href="{{{url('paypal/ec-checkout')}}}"><span>{{ trans('lang.paypal') }}</span></a></div>
+                            <div class="wt-btnarea"><a class="wt-btn" href="{{{url('bkash/ec-checkout')}}}"><span>{{ trans('Bkash') }}</span></a></div>
                         </div>
                         @php
                             session()->put(['product_id' => e($proposal->id)]);  
