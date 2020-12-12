@@ -231,9 +231,9 @@ Route::group(
 Route::post('job/get-wishlist', 'JobController@getWishlist');
 Route::get('dashboard/packages/{role}', 'PackageController@index');
 Route::get('package/get-purchase-package', 'PackageController@getPurchasePackage');
-Route::get('paypal/redirect-url', 'PaypalController@getIndex');
-Route::get('paypal/ec-checkout', 'PaypalController@getExpressCheckout');
-Route::get('paypal/ec-checkout-success', 'PaypalController@getExpressCheckoutSuccess');
+Route::get('bkash/redirect-url', 'BkashController@getIndex');
+Route::get('bkash/ec-checkout', 'BkashController@getExpressCheckout');
+Route::get('bkash/ec-checkout-success', 'BkashController@getExpressCheckoutSuccess');
 Route::get('user/products/thankyou', 'UserController@thankyou');
 Route::get('payment-process/{id}', 'EmployerController@employerPaymentProcess');
 Route::get('search/get-search-filters', 'PublicController@getFilterlist');

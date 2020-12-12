@@ -2,7 +2,7 @@
 /**
  * Class PaypalController
  *
- 
+
 * @category ElanceBD
 *
 * @package Elancebd
@@ -109,22 +109,29 @@ class PaypalController extends Controller
      */
     public function getExpressCheckout(Request $request)
     {
-        if (Auth::user()) {
-            //$recurring = ($request->get('mode') === 'recurring') ? true : false;
-            $recurring = false;
-            $success = true;
-            $cart = $this->getCheckoutData($recurring, $success);
-            $payment_detail = array();
-            try {
-                $response = $this->provider->setExpressCheckout($cart, $recurring);
-                return redirect($response['paypal_link']);
-            } catch (\Exception $e) {
-                $invoice = $this->createInvoice($cart, 'Invalid', $payment_detail);
-                session()->put(['code' => 'danger', 'message' => "Error processing PayPal payment for Order $invoice->id!"]);
-            }
-        } else {
-            abort(404);
-        }
+
+
+
+
+
+   echo "Pay With bKash";
+
+        // if (Auth::user()) {
+        //     //$recurring = ($request->get('mode') === 'recurring') ? true : false;
+        //     $recurring = false;
+        //     $success = true;
+        //     $cart = $this->getCheckoutData($recurring, $success);
+        //     $payment_detail = array();
+        //     try {
+        //         $response = $this->provider->setExpressCheckout($cart, $recurring);
+        //         return redirect($response['paypal_link']);
+        //     } catch (\Exception $e) {
+        //         $invoice = $this->createInvoice($cart, 'Invalid', $payment_detail);
+        //         session()->put(['code' => 'danger', 'message' => "Error processing PayPal payment for Order $invoice->id!"]);
+        //     }
+        // } else {
+        //     abort(404);
+        // }
     }
 
     /**
@@ -297,7 +304,7 @@ class PaypalController extends Controller
                 $product_price = $invoice->price - $invoice->sales_tax;
                 $item = DB::table('items')->select('id')->where('subscriber', $product['subscriber_id'])->first();
                 if (!empty($item)) {
-                    $item = Item::find($item->id);    
+                    $item = Item::find($item->id);
                 } else {
                     $item = new Item();
                 }
@@ -329,7 +336,7 @@ class PaypalController extends Controller
                         $user->expiry_date = $expiry_date;
                         $user->save();
                     }
-                }    
+                }
             }
         }
         // send mail

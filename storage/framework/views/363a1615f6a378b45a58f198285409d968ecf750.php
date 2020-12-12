@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+
+>>>>>>> 475afb7193f6fb2b1f1a9533f478a883ad05b781
 <?php $__env->startSection('content'); ?>
     <div id="home" class="la-home-page">
         <?php if(Session::has('not_verified')): ?>
@@ -226,4 +230,8 @@
         </section>
     </div>
 <?php $__env->stopSection(); ?>
+<<<<<<< HEAD
+=======
+
+>>>>>>> 475afb7193f6fb2b1f1a9533f478a883ad05b781
 <?php echo $__env->make('front-end.master', \Illuminate\Support\Arr::except(get_defined_vars(), array('__data', '__path')))->render(); ?>

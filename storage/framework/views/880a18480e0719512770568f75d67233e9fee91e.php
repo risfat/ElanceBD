@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 
 
@@ -20,6 +21,9 @@
 
 
 <!-- <?php echo Form::open(['url' => '', 'class' =>'wt-formtheme wt-userform', 'id' =>'comission-form', '@submit.prevent'=>'submitCommisionSettings']); ?>
+=======
+<?php echo Form::open(['url' => '', 'class' =>'wt-formtheme wt-userform', 'id' =>'comission-form', '@submit.prevent'=>'submitCommisionSettings']); ?>
+>>>>>>> 475afb7193f6fb2b1f1a9533f478a883ad05b781
 
     <div class="wt-location wt-tabsinfo">
         <div class="wt-tabscontenttitle">
@@ -74,4 +78,9 @@
         <?php echo Form::submit(trans('lang.btn_save'), ['class' => 'wt-btn']); ?>
 
     </div>
+<<<<<<< HEAD
 <?php echo Form::close(); ?> -->
+=======
+<?php echo Form::close(); ?>
+
+>>>>>>> 475afb7193f6fb2b1f1a9533f478a883ad05b781

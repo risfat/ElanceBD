@@ -108,8 +108,11 @@
                 </fieldset>
             </div>
         </div>
+<<<<<<< HEAD
         
         <!--
+=======
+>>>>>>> 475afb7193f6fb2b1f1a9533f478a883ad05b781
         <div class="wt-widget wt-effectiveholder">
             <div class="wt-widgettitle">
                 <h2><?php echo e(trans('lang.langs')); ?></h2>
@@ -136,8 +139,11 @@
                 </fieldset>
             </div>
         </div>
+<<<<<<< HEAD
         
         -->
+=======
+>>>>>>> 475afb7193f6fb2b1f1a9533f478a883ad05b781
         <div class="wt-widget wt-effectiveholder">
             <div class="wt-widgetcontent">
                 <div class="wt-applyfilters">
@@ -149,4 +155,8 @@
         </div>
     <?php echo Form::close(); ?>
 
+<<<<<<< HEAD
 </aside>
+=======
+</aside>
+>>>>>>> 475afb7193f6fb2b1f1a9533f478a883ad05b781

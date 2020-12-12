@@ -127,7 +127,11 @@
                 </div>
             </div>
         </div>
+<<<<<<< HEAD
         <!--<div class="wt-widget wt-effectiveholder">
+=======
+        <div class="wt-widget wt-effectiveholder">
+>>>>>>> 475afb7193f6fb2b1f1a9533f478a883ad05b781
             <div class="wt-widgettitle">
                 <h2><?php echo e(trans('lang.langs')); ?></h2>
             </div>
@@ -152,7 +156,11 @@
                     <?php endif; ?>
                 </fieldset>
             </div>
+<<<<<<< HEAD
         </div> -->
+=======
+        </div>
+>>>>>>> 475afb7193f6fb2b1f1a9533f478a883ad05b781
         <div class="wt-widget wt-effectiveholder">
             <div class="wt-widgetcontent">
                 <div class="wt-applyfilters">
